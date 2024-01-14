@@ -7,7 +7,7 @@ NOTE - This code uses libraries declared at the top of the script. These are:
 - MAX30100_PulseOximeter.h
 - Adafruit_SSD1306.h
 - Adafruit_GFX.h
-- Wire.h
+- Wire.h (Is an extension of MAX30100_PulseOximeter.h . It is noted here to be aware of in case an issues arise)
 
 You can find the libraries and examples used to help create the script at the following links:
 
@@ -17,7 +17,7 @@ https://github.com/adafruit/Adafruit_SSD1306
 
 This code will not run without an OLED display. This script is configured to screen dimensions 96x16. If using a different-sized display, this must be updated in lines 17&18.
 
-This code will not run without the heart rate click installed into the PCB. If error messages continue to appear on the OLED display, please check the connections of the pins and the IC's on the PCB.
+This code will not run without the heart rate click installed into the PCB. If error messages continue to appear on the OLED display, please check the connections of the pins and the ICs on the PCB.
 
 If you have any issues please email me at rb2521@bath.ac.uk and I will get back to you as soon as I can.
 
