@@ -1,7 +1,7 @@
 //Code written by RB2521 and MWSO20
-//This code is to be used in for the purposes of the University of Bath, Department of Electrical and Electronic Engineering, Project week 2 - Digital Health Monitoring.
+//This code is to be used for the University of Bath, Department of Electrical and Electronic Engineering, Project Week 2 - Digital Health Monitoring.
 
-//NOTE - This Code uses Libraries in order to run the Heart rate click, OLED screen and Interfaces. These libraries need to be downloaded in order for this code to run.
+//NOTE - This Code uses Libraries to run the Heart rate click, OLED screen and Interfaces. These libraries need to be downloaded in order for this code to run.
 
 //Loading the Libraries
 #include <Wire.h>
@@ -43,7 +43,7 @@ void onBeatDetected()
 
 void setup() {
   Serial.begin(115200);
-  // put your setup code here, to run once:
+  //Put your setup code here, to run once:
   pinMode(RedLedPin, OUTPUT);
   pinMode(GreenLedPin, OUTPUT);
   pinMode(TopButtonPin, INPUT);
@@ -52,7 +52,7 @@ void setup() {
   display.begin(SSD1306_SWITCHCAPVCC, OLED_ADDR);
   display.clearDisplay();
 
-  //Initialize PuleOximeter. Self handling failure detection. Failures are usually "due to an improper I2C wiring, missing power supply or wrong target chip"
+  //Initialize PuleOximeter. Self-handling failure detection. Failures are usually "due to an improper I2C wiring, missing power supply or wrong target chip"
   //https://github.com/gabriel-milan/Arduino-MAX30100/blob/master/examples/MAX30100_Minimal/MAX30100_Minimal.ino lines 46-47
 for ( int i; i < 500; i++) {
     display.setTextSize(1);
@@ -75,7 +75,7 @@ for ( int i; i < 500; i++) {
     for (;;);
   }
   else {
-    //Displays to the OLED screen if all setup is successfull, then progresses
+    //Displays to the OLED screen if all setup is successful, then progresses
     digitalWrite(GreenLedPin, HIGH);
 
     display.clearDisplay();
