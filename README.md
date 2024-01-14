@@ -1,7 +1,7 @@
 # project-week-2
 Arduino Code for UoB, Dept EEE, Project week 2 - Digital Health Monitoring
 
-This is all versions of the code we have written for the second project week spanning 08/01/2024 - 12/10/2024. 
+This is all versions of the code I have written for the second project week spanning 08/01/2024 - 12/10/2024. 
 
 NOTE - This code uses libraries declared at the top of the script. These are:
 - MAX30100_PulseOximeter.h
