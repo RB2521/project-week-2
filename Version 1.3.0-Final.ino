@@ -1,7 +1,7 @@
-//Code written by RB2521 and MWSO20
-//This code is to be used in for the purposes of the University of Bath, Department of Electrical and Electronic Engineering, Project week 2 - Digital Health Monitoring.
+//Code written by RB2521
+//This code is to be used for the University of Bath, Department of Electrical and Electronic Engineering, Project Week 2 - Digital Health Monitoring.
 
-//NOTE - This Code uses Libraries in order to run the Heart rate click, OLED screen and Interfaces. These libraries need to be downloaded in order for this code to run.
+//NOTE - This Code uses Libraries to run the Heart rate click, OLED screen and Interfaces. These libraries need to be downloaded in order for this code to run.
 
 //Loading the Libraries
 #include <Wire.h>
@@ -10,7 +10,7 @@
 #include <Adafruit_GFX.h>
 
 
-//Defining a reporting period that does not change - used in a comparitive statement
+//Defining a reporting period that does not change - used in a comparative statement
 #define REPORTING_PERIOD_MS 1000
 
 //Defining the dimensions of the OLED screen
@@ -63,7 +63,7 @@ for ( int i; i < 500; i++) {
     display.println("Initializing");
     display.display();
   }
-  //Initialize PuleOximeter. Self handling failure detection. Failures are usually "due to an improper I2C wiring, missing power supply or wrong target chip"
+  //Initialize PuleOximeter. Self-handling failure detection. Failures are usually "due to an improper I2C wiring, missing power supply or wrong target chip"
   //https://github.com/gabriel-milan/Arduino-MAX30100/blob/master/examples/MAX30100_Minimal/MAX30100_Minimal.ino lines 46-47
   if (!pox.begin()) {
     digitalWrite(RedLedPin, HIGH);
@@ -78,8 +78,8 @@ for ( int i; i < 500; i++) {
     for (;;);
   }
   else {
-    //Displays to the OLED screen if all setup is successfull, then progresses to the following code.
-    //Set then Green LED to HIGH
+    //Displays to the OLED screen if all setup is successful, then progresses to the following code.
+    //Set the Green LED to HIGH
     digitalWrite(GreenLedPin, HIGH);
 
     //Clear the display
@@ -123,7 +123,7 @@ void loop(){
         display.setCursor(0, 0);
         HeartRate = int(pox.getHeartRate());
         display.print("Heart rate: ");
-        //Improved UI. Displayes "--" instead of 0
+        //Improved UI. Displays "--" instead of 0
         if (HeartRate == 0){
           display.print("--");
         } else {
@@ -134,7 +134,7 @@ void loop(){
         }
         SpO2Rate = int(pox.getSpO2());
         display.print("\n%SpO2: ");
-        //Improved UI. Displayes "--" instead of 0
+        //Improved UI. Displays "--" instead of 0
         if (SpO2Rate == 0) {
           display.print("--");
         } else {
