@@ -19,7 +19,9 @@ This code will not run without an OLED display. This script is configured to scr
 
 This code will not run without the heart rate click installed into the PCB. If error messages continue to appear on the OLED display, please check the connections of the pins and the ICs on the PCB.
 
-**NOTE** The names of the .ino files are not going to work when loaded into the Arduino IDE. To solve this, follow the prompts displayed in the IDE to create a file and edit the name of the file to be able to run and use the script. The reason for the names is simply to keep easier track of where I was in the progression of the week and ensure I did not upload multiple of the same versions.
+**NOTE - File Names**
+
+The names of the .ino files are not going to work when loaded into the Arduino IDE. To solve this, follow the prompts displayed in the IDE to create a file and edit the name of the file to be able to run and use the script. The reason for the names is simply to keep easier track of where I was in the progression of the week and ensure I did not upload multiple of the same versions.
 
 If you have any issues please email me at rb2521@bath.ac.uk and I will get back to you as soon as I can.
 
