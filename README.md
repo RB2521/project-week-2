@@ -7,7 +7,7 @@ NOTE - This code uses libraries declared at the top of the script. These are:
 - MAX30100_PulseOximeter.h
 - Adafruit_SSD1306.h
 - Adafruit_GFX.h
-- Wire.h (Is an extension of MAX30100_PulseOximeter.h . It is noted here to be aware of in case an issues arise)
+- Wire.h (Is an extension of MAX30100_PulseOximeter.h . It is noted here to be aware of in case any issues arise)
 
 You can find the libraries and examples used to help create the script at the following links:
 
